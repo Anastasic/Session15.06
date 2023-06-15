@@ -72,7 +72,7 @@ namespace МагазинчикУДома
         private void Click(object sender, RoutedEventArgs e)
         {
             var Li = App.DB.Tovars.ToList();
-            var application = new Word.Application;
+            var application = new Word.Application();
             Word.Document document = application.Documents.Add();
             Word.Paragraph par = document.Paragraphs.Add();
             Word.Range range = par.Range;
